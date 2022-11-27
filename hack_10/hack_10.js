@@ -14,6 +14,13 @@
  */
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
+let limite = arr.length;
+
+for (let indice = 0; indice <= limite - 1; indice++) {
+   if (indice % 2 == 1){
+      result.push(arr[indice])
+   }
+}
 
 
 //export result

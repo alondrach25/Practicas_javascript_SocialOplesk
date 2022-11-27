@@ -7,6 +7,9 @@
  */
 let result = [];
 
+for(let iterar = 3; iterar >=0; iterar--){
+    result[3-iterar] = (2*(iterar)) + 1
+}
 
 //export result
 module.exports = result;

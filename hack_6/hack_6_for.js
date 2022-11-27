@@ -8,7 +8,11 @@
  */
 let str = "fooziman";
 let result = [];
+let limite = str.length;
 
+for(let iterar = 0; iterar <= limite-1; iterar++){
+    result[iterar] = str[iterar]
+}
 
 //export result
 module.exports = result;

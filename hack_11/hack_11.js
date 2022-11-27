@@ -18,7 +18,44 @@
 let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
+let tamano_number = numberArray.length,
+    tamano_string = stringArray.length,
+    tamano_result = tamano_number + tamano_string;
 
+result = numberArray.concat(stringArray);
+
+for (let index = 0; index <= tamano_result-1; index++){
+    switch (result[index]) {
+        case 1:
+            result[index] = "one";
+            break;
+        case 3:
+            result[index] = "three";
+            break;
+        case 5:
+            result[index] = "five";
+            break;
+        case "foo":
+            result[index] = "f00";
+            break;
+        case "bar":
+            result[index] = "Bar";
+            break;
+        case "baz":
+            result[index] = "b@z";
+            break;
+        case "qux":
+            result[index] = "quX";
+            break;
+        case "echo":
+            result[index] = "3ch0";
+            break;                            
+    }
+}
+
+result.unshift("h@ck")
+result.splice(tamano_number + 1, 0, "h@ck")
+result.push("h@ck")
 
 //export result
 module.exports = result;

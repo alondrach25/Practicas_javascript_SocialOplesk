@@ -7,6 +7,9 @@
  */
 let result = [];
 
+result = [3,2,1,0].map(function(numero){
+    return (2*(numero))+1;
+})
 
 //export result
 module.exports = result;

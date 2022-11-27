@@ -7,6 +7,9 @@
  */
 let result = [];
 
+for(let iterar = 0; iterar < 4; iterar++){
+    result[iterar] = (2*iterar)+1
+}
 
 //export result
 module.exports = result;

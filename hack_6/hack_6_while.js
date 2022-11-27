@@ -8,7 +8,13 @@
  */
 let str = "fooziman";
 let result = [];
+let limite = str.length;
+let iterar = 0;
 
+while(iterar <= limite-1){
+    result[iterar] = str[iterar]
+    iterar++
+}
 
 //export result
 module.exports = result;
